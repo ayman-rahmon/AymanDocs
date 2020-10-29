@@ -18,14 +18,34 @@ sudo systemctl systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd /snap
 
 ```
+## looking for packages:
+
+```
+snap find <package-name>
+
+```
+
 ## installing a snap image:
 ```
-sudo snap install <name of image>
+sudo snap install <package-name>
 
 ```
 ## to run a snap image:
 
 ```
-snap run <name of image>
+snap run <package-name>
+
+```
+
+## manipulating snap images:
+
+```
+# list installed packages...
+snap list
+# check the capacity and usga of packages...
+df | grep <package-name>
+
+
+
 
 ```
