@@ -1,4 +1,4 @@
-# snap settings...
+# snap
 
 ## installing snap on arch linux:
 
