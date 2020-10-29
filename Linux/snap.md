@@ -44,7 +44,8 @@ snap run <package-name>
 snap list
 # check the capacity and usga of packages...
 df | grep <package-name>
-
+#get a  describtion of a snap package...
+snap info <package-name>
 
 
 
