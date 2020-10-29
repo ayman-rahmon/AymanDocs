@@ -47,6 +47,4 @@ df | grep <package-name>
 #get a  describtion of a snap package...
 snap info <package-name>
 
-
-
 ```
