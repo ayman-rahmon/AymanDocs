@@ -5,7 +5,7 @@
 intents are messaging objects that can be used to request an action from another app component.like one of the following:
 * starting an activity.
 * starting a service (service is a background process).
-* delivering a broadcast (broadcast is a message that any app can receive).
+* delivering a broadcastReceiver (broadcast is a message that any app can receive from the operating system).
 
 
 
