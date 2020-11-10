@@ -38,7 +38,7 @@ Toast.makeText(this,message , Toast.LENGTH_LONG).show();
  - which means it will double any process of fetching data from the internet (using double the data actually needed ) or call the database twice if we have cached data(which in turns affects overall memory usage and processing usage)
  - also when that happens the zombie Activity gets preserved by the background process and doesn't get destroyed which result in the activity stay in the activities stack even thought it's unreachable.
 
-![duplicate background processes](../images/backgroundInOnCrete.png)
+![duplicate background processes](../images/backgroundInOnCreate.png)
 
 
 
