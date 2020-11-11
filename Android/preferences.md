@@ -1,4 +1,4 @@
-# preferences
+# preferences(Settings Activity)
 
 
 
@@ -22,4 +22,15 @@ preferences are one of the way that allows us to make our data persistant.
 - EditTextPreference.
 
 
-  (more will be added to this file later (sample code and detailed instructions ))
+### how to decide if something should be included in a settings(preferences) Activity?
+
+![is it a preference ?](../images/isItAPreference.png)
+
+
+
+
+
+
+
+
+  (more will be added to this file later (sample code))
