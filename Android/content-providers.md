@@ -16,7 +16,7 @@
 
 
 
-![conte provider structure](../images/contentProvidersStructure.png)
+![conte provider structure](../images/contentProviderStructure.png)
 
 
 
