@@ -10,7 +10,7 @@
 
 ## Advanteges :
 
-1. Extra level of Abstruction(allowing developers to change the underline data source without needing to change any code in the app itself).
+1. Extra level of abstraction (allowing developers to change the underline data source without needing to change any code in the app itself).
 2. leverage functionality of And classes. (uses content providers. E.g: Loaders).
 3. Allow many apps to access, use and modify a single data source securely.
 
