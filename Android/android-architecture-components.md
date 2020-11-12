@@ -90,7 +90,19 @@ the DAO interface...
 
 
 ```
+public interface TaskDAO {
 
+@Insert(onConflict = OnConflictStrategy.REPLACE)
+public void insertTask();
 
+@Update(onConflict = OnConflictStrategy.REPLACE)
+public void updateTask() ;
 
+@Query("DELETE FROM tasks")
+public void deleteAllTasks() ;
+
+@Query("SELECT * FROM tasks")
+public ArrayList<Task> getTasks() ;
+
+}
 ```
