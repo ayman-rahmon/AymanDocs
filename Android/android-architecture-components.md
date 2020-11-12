@@ -1,7 +1,7 @@
-# android architecture components
+# Android Architeture components :
 
 
-## Android Architeture components :
+
 1. Room: new SQLite object Relational mapping library.
 2. LiveDate: to observe changes in the database.
 3. ViewModel: to chache data (during configuration changes).
@@ -9,21 +9,21 @@
 
 
 
-### RoomDB :
+## RoomDB :
 
-#### features :
+### features :
 1. less boilerplate.
 2. SQL validation at compile time.
 3. built to work with LiveData and RXJava for data observation
 
-#### Annotaions :
+### Annotaions :
 @Entity : tubles.
 @DAO : api for reading and writing data.
 @Database : database holder.
 
 
 
-#### more on @DAO :
+### more on @DAO :
 * DAO is an interface with the DAO notation.
 * each method will have a @query notation that will connect the method to a query.
 * @ update annotation is used for the updating sqllite statememtns like update,insert.
@@ -106,3 +106,5 @@ public ArrayList<Task> getTasks() ;
 
 }
 ```
+
+## Live Data :
