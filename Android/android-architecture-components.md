@@ -108,3 +108,24 @@ public ArrayList<Task> getTasks() ;
 ```
 
 ## Live Data :
+
+![live data](../images/LiveDataStructure.png)
+
+* live data allows you to monitor the data source using observes and change the ui depending on changes in the database in real time.
+
+* savedinstancesState, can be used on orientation changes to  save the data but it's meant to be used for small amounts of data that can be serilized and deserialized easily(no using it for entire lists) .
+
+### alternatives :
+1. query database again on orientation changes.
+2. ViewModels : allows data to servive configuration changes (E.g: rotation).
+
+
+## View Models :
+
+![view model on rotation](../images/ViewModelWithLifeCycle.png)
+
+* we can cache complex data our ViewModel.
+* view model can be cached.
+* view model prevents memory leaks.
+* lifecycle owner: objects with a  lifecycle like Activities and fragments.
+* life cycleobserver : observs Lifecycle owner and get notified on life cycle changes.
