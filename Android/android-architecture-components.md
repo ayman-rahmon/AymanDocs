@@ -37,7 +37,7 @@
 ![roomDB structure](../images/RoomDatabase.png)
 
 
-coded example:
+### coded example:
 
 database initilization and creation...
 ```
