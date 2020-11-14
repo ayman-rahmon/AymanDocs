@@ -34,6 +34,8 @@
   ![RoomDB available Conflict strategies](https://developer.android.com/reference/android/arch/persistence/room/OnConflictStrategy)
 * another annotation that is available is @TypeConverter{DataConverter.class} // give it a converter class...
 
+![roomDB structure](../images/RoomDatabase.png)
+
 
 coded example:
 
