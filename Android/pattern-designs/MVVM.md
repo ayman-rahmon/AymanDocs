@@ -1,7 +1,7 @@
 # MVVM patter design
 
 
-![MVVM network](../images/MVVM-structure-network.png)
+![MVVM network](../images/MVVMStructure.png)
 
 
 
@@ -9,7 +9,7 @@
 
 
 
-![MVVM paged list](../images/MVVM-structure.png)
+![MVVM paged list](../images/MVVMPagedList.png)
 
 
 
