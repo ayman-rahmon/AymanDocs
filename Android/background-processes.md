@@ -19,4 +19,6 @@
 
 * JobService : is a service that executes at some point in the future or when some condition is met.
 * Schedualer : defines when a JobService should run.
-* bound services 	can easily comunicate back to the component(components like ui sound controlers).E.g: sound data .
+* bound services can easily comunicate back to the component(components like ui sound controlers).E.g: sound data .
+
+![binding Service](../images/bindingService.png)
