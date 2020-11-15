@@ -58,3 +58,8 @@
 1. Android will keep all apps that interact with the user running smoothly.
 2. Android will keep all apps with visible activities followed by service running,  unless this violates the first law.
 3. Android will keep all apps in the background running unless this violates the first or the second rules.
+
+![android resource management levels](../images/androidResourceManagementLevels.png)
+
+
+## Job Schedular :
