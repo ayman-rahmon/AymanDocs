@@ -62,4 +62,56 @@
 ![android resource management levels](../images/androidResourceManagementLevels.png)
 
 
-## Job Schedular :
+## Job scheduler :
+* an API for scheduling various types of jobs against the framework that will be executed in your application's own process.
+* JobScheduler started from API 24.
+
+```
+
+// define the service in the manifest...
+
+
+
+<service android:name=".TestJobService"
+	 android:label="test service"
+	 android:permission="android.permission.BIND_JOB_SERVICE">
+
+
+</service>
+
+// define the jobe service class ...
+
+public class TestJobService extends JobService {
+	private static final String TAG = "syncService" ;
+
+ 	@override
+	public boolean onStartJob(JobParameter params){
+		Intent service = new Intent(getApplicationContext(),TestServiceLocal.class);
+
+	}
+
+	@override
+	public boolean onStopJob(JobParameters params) {
+		return true ;
+	}
+}
+
+
+
+
+
+
+// in a utils class (or a sync class )
+public static scheduleJob(Context context){
+
+JobScheduler js = (JobScheduler) Context.getSystemService(Context.JOB_SCHEDULER_SERVICE);
+JobInfo.Builder builder = new JobInfo.Builder(MY_BACKGROUND_JOB,new ComponentName(context,TestJobService.class));
+builder.setMinimumLatency(1*10000); // wait at least ...
+builder.setOverrideDeadline(3*1000); // maximum delay...
+
+js.schedule(builder.build());
+}
+```
+
+
+## FirebaseJobDispatcher :
