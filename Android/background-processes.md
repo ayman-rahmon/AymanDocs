@@ -115,3 +115,24 @@ js.schedule(builder.build());
 
 
 ## FirebaseJobDispatcher :
+* firebase job dispatcher works from APi 14 so better for backwards compatibility that JobScheduler...
+
+```
+Driver driver = new GooglePlayDriver(context) ;
+FirebaseJobDispatcher dispatcher = new FirebaseJobDispatcher(driver);
+
+Job j = dispatcher.newJobBuilder()
+.setService(MyJobService.class)
+.setTag("complex-job")
+.setLifetime(Lifetime.UNTIL_NEXT_BOOT)
+.setTrigger(Trigger.executtionWindow(0.99))
+.setReplaceCurrent(true)
+.setRetryStrategy(RetryStrategy.DEFAULT_EXPON)
+.setConstraints(Constraint.ON_UNMETERED_NETWORK) // only run on unmettered network...
+.build() ;
+
+
+```
+
+
+## Work Manager:
