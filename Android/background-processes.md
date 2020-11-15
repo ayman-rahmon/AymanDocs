@@ -136,3 +136,7 @@ Job j = dispatcher.newJobBuilder()
 
 
 ## Work Manager:
+
+* WorkManager is a library of scheduling and executing defeeable background work on Android.
+* it's a recommended replacement for Firebase JobDispatcher.
+* WorkManager also supports backwards compatibility but it's better than the firebase dispatcher in the sence that it will use the appropriate library for the current api instead of just using the FirebaseDispatcher or the JobSchedule.
