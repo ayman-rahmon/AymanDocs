@@ -43,16 +43,19 @@
 * create a notification channel object :
   ```
   NotificationChannel channel = new NotificationChannel() ;
-
+```
 ```
 * you can add groups within the channels.
 * notification badges .
 * notification manager.
 * we get system services using
-  ```
+
+```
   //Context.getSystemService(String);
   Context.getSystemService(Context.NOTIFICATION_SERVICE);
+  
   ```
+  
 ## three laws of android Resource management:
 
 1. Android will keep all apps that interact with the user running smoothly.
