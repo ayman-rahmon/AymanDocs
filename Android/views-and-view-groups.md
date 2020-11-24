@@ -63,4 +63,32 @@ view.setText(viewModel.getUserName());
 
 ### Fragment Lifecycle:
 * directly affected by host life cycle.
-* methods
+* Fragment lifecycle control methods:
+	* onCreatView
+	* onDestroyView
+	* onStart
+	* onPause
+	* onStopped
+	* onResume
+* programatically managing attaching and detaching fragments in android happens using a FragmentManager.
+
+```
+FragmenManager  m = getSupportFragmentManager();
+// use the following line to attach fragments to fragment containers...(which are defined in xml).
+m.beginTransaction().add(container,  Fragment);
+```
+
+* FragmentManager lets you add , remove or replace fragmets at runtime.
+* to dynamically change fragments, you'll need a container view to reference their location and hold each fragment.
+* static fragments (that don't change during run time ) don not need a container or transactions. instead they can just just be given the be specified in the xml file.
+
+```
+
+<androidx.fragment.app.FragmentContainerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_container_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.example.ExampleFragment" />
+
+```
