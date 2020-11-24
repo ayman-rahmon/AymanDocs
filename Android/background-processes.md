@@ -140,3 +140,18 @@ Job j = dispatcher.newJobBuilder()
 * it's a recommended replacement for Firebase JobDispatcher.
 * WorkManager also supports backwards compatibility but it's better than the firebase dispatcher in the sence that it will use the appropriate library for the current api instead of just using the FirebaseDispatcher or the JobSchedule.
 * workmanage is used for synchronous tasks that don't need to upload the ui or give us information in real time (E.g: real time location information).
+
+
+
+
+## Broadcats Receiver:
+
+* it is a core android component that enables applications to receive intents that are broadcasted by the system or by another applications.
+* broadcast receiver can be triggered even when the app is not running.
+* intent filter: expression that says what intents can trigger your component.
+* types of receiver:
+  1. static : triggered even if the app is not running.
+  2. dynamic : tied to app life cycle.(works only if the app is running).
+* jobs are better than using static receiver in terms of battery and some performance stuff.
+* dynamic broadcast receivers are registered and unregistered in onPause and onResume  instead of the manifest.
+*
