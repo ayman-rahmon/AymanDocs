@@ -44,7 +44,6 @@
   ```
   NotificationChannel channel = new NotificationChannel() ;
 ```
-```
 * you can add groups within the channels.
 * notification badges .
 * notification manager.
@@ -53,9 +52,7 @@
 ```
   //Context.getSystemService(String);
   Context.getSystemService(Context.NOTIFICATION_SERVICE);
-
-  ```
-
+```
 ## three laws of android Resource management:
 
 1. Android will keep all apps that interact with the user running smoothly.
@@ -70,7 +67,6 @@
 * JobScheduler started from API 24.
 
 ```
-
 // define the service in the manifest...
 
 
@@ -120,7 +116,6 @@ js.schedule(builder.build());
 ## FirebaseJobDispatcher :
 * firebase job dispatcher works from APi 14 so better for backwards compatibility that JobScheduler...
 
-```
 ```
 Driver driver = new GooglePlayDriver(context) ;
 FirebaseJobDispatcher dispatcher = new FirebaseJobDispatcher(driver);
