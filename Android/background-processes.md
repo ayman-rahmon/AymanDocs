@@ -154,4 +154,3 @@ Job j = dispatcher.newJobBuilder()
   2. dynamic : tied to app life cycle.(works only if the app is running).
 * jobs are better than using static receiver in terms of battery and some performance stuff.
 * dynamic broadcast receivers are registered and unregistered in onPause and onResume  instead of the manifest.
-*
