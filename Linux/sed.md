@@ -36,4 +36,14 @@ sed 11q file
 # you can remove all of the comments in a file using sed like :
 sed 's/#.*//g'
 sed 's/#.*/d'
+# using multiple commands with semicolms instead of multiple flags in the command line:
+sed "s/\s*#.*//g; /^$/d" # removes all comments with white spaces before them and removes all empty lines..
+
 ```
+## Additional Notes
+* \s    # stands for any whitespace (just like in regular expressions).
+* you can also use multiple commands by adding ; between each command within the same quotation marks.
+* p flag means print.
+* d flag means delete.
+* s flag means substitute.
+* sed 11q means when you find the 11'th line Quit .
