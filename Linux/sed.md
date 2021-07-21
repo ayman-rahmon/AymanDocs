@@ -33,5 +33,7 @@ sed 's/[a-z]/\U&/g'
 sed 's/[a-z]/\L&/g'
 # using sed as a replacement of the head command:
 sed 11q file
-
+# you can remove all of the comments in a file using sed like :
+sed 's/#.*//g'
+sed 's/#.*/d'
 ```
