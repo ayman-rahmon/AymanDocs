@@ -67,7 +67,7 @@ pacstrap /mnt linux linux-firmware base-devel vim
 
 ### step 8 : setting up fstab (for the boot):
 ```
-genfstab -U /mnt/etc >> /mnt/fstab # we use the U option to get the physical address which is mor reliable.
+genfstab -U /mnt/etc >> /mnt//etc/fstab # we use the U option to get the physical address which is mor reliable.
 ```
 ## step 9 : change root into the new installed system:
 ```
