@@ -18,6 +18,11 @@ git config --global user.email "<user-email-here>"
 git config --global core.editor "<editor-of-choice-here>"
 # setting up difference checking tool
 git config --global diff.tool <tool-here>
+# set and unset the cache to save your access token instead of memorising it...
+git config --global credential.helper cache
+# unsetting the saved cache ...
+git config --global --unset credential.helper
+
 ```
 
 ## git manipulating git locally:
