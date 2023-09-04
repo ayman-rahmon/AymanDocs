@@ -58,6 +58,18 @@ git checkout <branch-name>
 git merge <second-branch-name>
 # you can also merge two branches like this ...(first one is the destination)
 git merge <first-branch-name> <second-branch-name>
+# get the commits that are causing a conflict...
+git log --merge
+# helps to identify the differences between the states repositories or files.
+git diff
+# git chekcout command is used to undo the changes made to the file, or for changing branches.
+git checkout
+# git mixed it used to undo changes to the working directory and staging area.
+git reset --mixed
+# git merge abort helps in exiting the merge process and returning back to the state before the merging began.
+git merge --abort
+# the reset command is used at the time of merge conflict to reset the conflicted files to their original state.
+git reset || git reset --hard origin/branch
 # showing the changes in each commit in one branch
 git show <branch-name>
 # to delete a branch use
