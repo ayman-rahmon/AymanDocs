@@ -1,0 +1,38 @@
+
+
+1- Single Respoinsility Principle : a class should have one and only one reason to change, meaning that a class should have only one job.
+2-open closed principle : objects or entities should be open for extension but closed for modification. -> this means that a class should be extendable without modifying the class itself.
+3-Laskov Substitution principle : Let q(x) be a property provable about objects of x of type T. then q(y)should be provable for objects y of type s where s is a subtype of T.
+
+This means that every subclass or derived class should be substitutable for their base or parent class 
+
+4- interface segregation principle: a client should never be forced to implement an interface that it doesn't use , or clients shouldn't be forced to depend on methods they do not use. 
+
+this principle emphasizes that larg, general-purpose interfaces should be broken down into smaller, more specific ones. this way , client classes only need to know about the methods that are relevant to them. 
+
+
+5- dependency inversion principle: Entities must depend on abstractions, not on concretions. it states that the high-level module must not depend on the low-level module, but they should depend on abstractions. 
+
+- a very good guide : 
+https://medium.com/@hlfdev/kiss-dry-solid-yagni-a-simple-guide-to-some-principles-of-software-engineering-and-clean-code-05e60233c79f
+
+
+
+S) Single-responsibility principle (SRP): Each object, class, and method needs to have a single responsibility.
+O) Open–closed principle (OCP): Software entities should be open to extension but closed to modification.
+L) Liskov substitution principle (LSP): Objects of a superclass should be substitutable by objects of their subclasses, and the application should still function as expected.
+I) Interface segregation principle (ISP): Software should be divided into several independent parts.
+D) Dependency inversion principle (DIP): We should rely on abstractions, not concrete implementations.
+
+
+
+
+
+websites for the wiki later on : 
+
+https://refactoring.guru/
+
+
+api design : 
+
+https://blog.dreamfactory.com/rest-apis-an-overview-of-basic-principles
